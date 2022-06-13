@@ -1,0 +1,23 @@
+# * EXCEPTION:
+# * ERROR - :inside_rect method missing on ~Module~.
+# The method named
+# :inside_rect
+# with args
+# [{:w=>50, :h=>50, :x=>615.0, :y=>1.370322597786982, :path=>"sprites/circle/gray.png", :x_speed=>0.0, :y_speed=>-7.94356374767173, :max_speed=>30}, {:w=>1280, :h=>1440, :x=>0, :y=>0, :path=>"sprites/tile/wall-1111.png"}]
+# doesn't exist on
+# [Module].
+# #+begin_src ~Module#inspect~
+# GTK::Geometry
+# #+end_src ~Module#inspect~ for :inside_rect method missing on ~Module~
+# 
+# ** Did you mean?
+# Here's a list of methods that kind of look like :inside_rect.
+# *** :inside_rect?, *** :rect_center_point, *** :rect_to_line
+# ** Backtrace:
+# *** app/main.rb:44:in calc
+# *** app/main.rb:13:in tick
+# *** app/main.rb:7:in tick
+# *** app/main.rb:55
+
+Game State:
+{:state=>{:entity_id=>3, :tick_count=>14959}, :temp_state=>{}, :inputs=>{:controller_one=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_two=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_three=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_four=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :keyboard=>{:key_up=>{:truthy_keys=>[]}, :key_held=>{:truthy_keys=>[]}, :key_down=>{:truthy_keys=>[]}, :has_focus=>true}, :mouse=>{:x=>528.0, :y=>294.0, :moved=>nil, :moved_at=>14876, :has_focus=>true}, :text=>[]}, :passes=>[], :outputs=>{:solids=>[], :sprites=>[], :lines=>[], :labels=>[], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}, :grid=>{:origin_x=>0.0, :bottom=>0.0, :left_margin=>0.0, :center_x=>640.0, :center=>[640.0, 360.0], :origin_y=>720, :name=>:bottom_left, :bottom_margin=>0.0, :runtime=>{:argv=>"../dragonruby ../cadet/", :platform=>"Linux", :required_files=>[], :reload_list_history=>{"app/main.rb"=>{:current=>{:path=>"app/main.rb", :global_at=>16438, :event=>:reload_completed}, :history=>[{:path=>"app/main.rb", :global_at=>-1, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>-1, :event=>:processing}, {:path=>"app/main.rb", :global_at=>-1, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>299, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>300, :event=>:processing}, {:path=>"app/main.rb", :global_at=>301, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>2698, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>2699, :event=>:processing}, {:path=>"app/main.rb", :global_at=>2700, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>16436, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>16437, :event=>:processing}, {:path=>"app/main.rb", :global_at=>16438, :event=>:reload_completed}]}}}, :rect=>[0.0, 0.0, 1280, 720], :ffi_draw=>"", :right=>1280, :top=>720, :center_y=>360.0, :left=>0.0}}

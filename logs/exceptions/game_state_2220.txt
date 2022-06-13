@@ -1,0 +1,19 @@
+# * EXCEPTION:
+# * ERROR - :clone= method missing on ~Float~.
+# The method
+# :clone=
+# with args
+# [335.0]
+# doesn't exist on 335.0.
+# 
+# ** Did you mean?
+# Here's a list of methods that kind of look like :clone=.
+# *** :clone
+# ** Backtrace:
+# *** app/main.rb:36:in calc
+# *** app/main.rb:13:in tick
+# *** app/main.rb:7:in tick
+# *** app/main.rb:10
+
+Game State:
+{:state=>{:entity_id=>3, :tick_count=>2220}, :temp_state=>{}, :inputs=>{:controller_one=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_two=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_three=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :controller_four=>{:key_down=>{}, :key_held=>{}, :key_up=>{}}, :keyboard=>{:key_up=>{:truthy_keys=>[]}, :key_held=>{:raw_key=>243, :truthy_keys=>[:raw_key]}, :key_down=>{:truthy_keys=>[]}, :has_focus=>false}, :mouse=>{:x=>1113.0, :y=>561.0, :moved=>nil, :moved_at=>241, :has_focus=>false}, :text=>[]}, :passes=>[], :outputs=>{:solids=>[], :sprites=>[], :lines=>[], :labels=>[], :sounds=>[], :borders=>[], :primitives=>[], :static_solids=>[], :static_borders=>[], :static_sprites=>[], :static_lines=>[], :static_labels=>[], :static_primitives=>[]}, :grid=>{:origin_x=>0.0, :bottom=>0.0, :left_margin=>0.0, :center_x=>640.0, :center=>[640.0, 360.0], :origin_y=>720, :name=>:bottom_left, :bottom_margin=>0.0, :runtime=>{:argv=>"../dragonruby ../cadet/", :platform=>"Linux", :required_files=>[], :reload_list_history=>{"app/main.rb"=>{:current=>{:path=>"app/main.rb", :global_at=>2220, :event=>:reload_completed}, :history=>[{:path=>"app/main.rb", :global_at=>-1, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>-1, :event=>:processing}, {:path=>"app/main.rb", :global_at=>-1, :event=>:reload_completed}, {:path=>"app/main.rb", :global_at=>2218, :event=>:reload_queued}, {:path=>"app/main.rb", :global_at=>2219, :event=>:processing}, {:path=>"app/main.rb", :global_at=>2220, :event=>:reload_completed}]}}}, :rect=>[0.0, 0.0, 1280, 720], :ffi_draw=>"", :right=>1280, :top=>720, :center_y=>360.0, :left=>0.0}}
