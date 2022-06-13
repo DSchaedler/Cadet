@@ -13,6 +13,8 @@ class Game
     calc(args)
 
     args.outputs[:table].clear_before_render = true
+    args.outputs[:table].w = @cabinet.w
+    args.outputs[:table].h = @cabinet.h
     args.outputs[:table].sprites << @cabinet
     args.outputs[:table].sprites << @ball
 
@@ -20,11 +22,11 @@ class Game
     args.outputs.labels << {x: 0, y: args.grid.center_y, text: "#{@ball.x_speed}"}
     args.outputs.labels << {x: 0, y: args.grid.center_y - 20, text: "#{@ball.y_speed}"}
 
-    args.outputs.sprites << {x: 0, y: @cabinet.y - @ball.y + args.grid.center_y - @ball.h , w: @cabinet.w, h: 720, path: :table}
+    args.outputs.sprites << {x: 0, y: args.grid.center_y - @ball.y, w: @cabinet.w, h: 1440, path: :table, source_h: 1440}
   end
 
   def setup(args)
-    @cabinet ||= { w: 1280, h: 720, x: 0, y: 0, path: 'sprites/tile/wall-1111.png' }
+    @cabinet ||= { w: 1280, h: 1440, x: 0, y: 0, path: 'sprites/tile/wall-1111.png' }
     @ball ||= { w: 50, h: 50,
                 x: args.grid.center_x - 25,
                 y: args.grid.center_y - 25,

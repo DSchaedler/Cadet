@@ -10810,3 +10810,7 @@ KALLER: [] Array
 +--------+
 | (none) |
 +--------+
+* AUTOCOMPLETE CANDIDATES: $gtk.reset seed: 1655092385..
++--------+
+| (none) |
++--------+
